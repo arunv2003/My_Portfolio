@@ -1,0 +1,394 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #202C37;
+   overflow-x: hidden;
+}
+.navbar{
+   z-index: 9999;
+}
+.main {
+   width: 100%;
+   height: max-content;
+   background-color: #111;
+}
+
+#bg {
+   position: relative;
+   margin-top: 60px;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 0.6;
+}
+
+#bg canvas {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0.7;
+}
+
+.Logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   z-index: 0.9;
+   flex-wrap: wrap;
+
+}
+
+#name {
+   color: whitesmoke;
+   position: absolute;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top: 90%;
+   left: 10%;
+}
+
+
+.Logo .left {
+   top: 15%;
+   position: absolute;
+   height: 50%;
+   width: 30vw;
+
+}
+
+.Logo .left img {
+   z-index: 1;
+   aspect-ratio: 3/2;
+   object-fit: contain;
+   mix-blend-mode: color-dodge;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+.Logo .right {
+   top: 20%;
+   left: 60%;
+   position: absolute;
+   height: 30vw;
+   width: 30vw;
+
+}
+
+.Logo .right img {
+   border: 2px solid seagreen;
+   z-index: 1;
+   aspect-ratio: 3/2;
+   object-fit: contain;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+
+#element {
+   height: 100%;
+   position: absolute;
+   top: 130%;
+   left: 25%;
+   font-size: 2.3em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   z-index: 1;
+   color: snow;
+}
+
+.counter {
+   /* background-color: cadetblue; */
+   height: max-content;
+   text-align: center;
+   font-weight: 800;
+}
+
+.counter h1 {
+   color: aliceblue;
+}
+
+.education {
+   display: flex;
+   gap: 30px;
+   padding: 50px;
+}
+
+.EductionType {
+   height: max-content;
+   position: relative;
+}
+
+.leftA {
+   height: max-content;
+   border-right: 3px solid rgba(0, 0, 255, 0.459);
+   padding: 0 30px;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   width: 50%;
+}
+
+#FirstEducation {
+   background-color: #6351CE;
+   color: #F5F3FC;
+   width: 100%;
+   height: max-content;
+   text-align: end;
+   padding: 20px;
+   font-weight: 100;
+   border-radius: 20px 0 20px 0px;
+   border: 2px solid rgba(0, 0, 255, 0.459);
+}
+
+#SecondEducation {
+   text-align: end;
+   padding: 0px 0 160px 0;
+   border-radius: 20px 0 20px 0px;
+
+}
+
+#ThirdEducation {
+   background-color: #6351CE;
+   color: #F5F3FC;
+   font-weight: 100;
+   padding: 0 20px 50px 0;
+   text-align: end;
+   border-radius: 20px 0 20px 0px;
+   border: 2px solid rgba(0, 0, 255, 0.459);
+}
+
+#FourthEducation {
+   padding: 0px 0 160px 0;
+   border-radius: 0 20px 0 20px;
+}
+
+#FifthEducation {
+   background-color: #6351CE;
+   color: #F5F3FC;
+   margin-top: 30px;
+   padding: 0 0 70px 20px;
+   font-weight: 100;
+   text-align: start;
+   border-radius: 0 20px 0 20px;
+   border: 2px solid rgba(0, 0, 255, 0.459);
+}
+
+#SixthEducation {
+   padding: 0 0 100px 0;
+   border-radius: 0 20px 0 20px;
+
+}
+
+.rightA {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+
+.bubble {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+}
+
+#firstbubble1 {
+   position: absolute;
+   left: 47.8%;
+   top: 37%;
+   background-color: burlywood;
+   border-radius: 50%;
+   height: 3%;
+   width: 1.8%;
+}
+
+#firstbubble2 {
+   position: absolute;
+   border-radius: 50%;
+   left: 47.8%;
+   top: 7%;
+   height: 3%;
+   width: 1.8%;
+   background-color: burlywood;
+}
+
+#firstbubble3 {
+   position: absolute;
+   border-radius: 50%;
+   left: 47.8%;
+   top: 67%;
+   height: 3%;
+   width: 1.8%;
+   background-color: burlywood;
+}
+
+.Skill {
+   height: max-content;
+   /* background-color: aqua; */
+}
+
+.Skill h1 {
+   color: aliceblue;
+   text-align: center;
+}
+
+.skilGrid {
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   gap: 20px;
+   padding: 20px;
+}
+
+.skils {
+   background-color: aliceblue;
+   border: 2px solid red;
+   padding: 30px;
+   border-radius: 0 30px 0 30px;
+   transition: 2s all ease-out ;
+   transform: scale(0.91);
+}
+
+.skils:hover {
+   background-color:#202C37;
+   transform: scaleX(1) scaleY(0.8);
+   transform: rotateY(40deg);
+   z-index: 999;
+   border: none;
+   font-weight: 600;
+   text-decoration: underline 2px #425c74;
+   color: whitesmoke;
+}
+
+.skils h2 {
+   text-align: center;
+}
+
+#logo {
+   background: linear-gradient(red, white, white, seagreen);
+   color: crimson;
+}
+
+.Project {
+   background-color: cadetblue;
+   height: max-content;
+   width: 100%;
+   padding-left: 40px;
+}
+
+.Project h1 {
+   color: aliceblue;
+   text-align: center;
+}
+
+.first {
+   padding: 40px;
+}
+
+.first h2 {
+   text-align: center;
+   color: aliceblue;
+}
+
+.first p {
+   text-align: center;
+}
+
+.first p a {
+   color: red;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+.first img {
+   padding: 10px;
+   height: 220px;
+}
+
+#second {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#second img {
+   height: 250px;
+}
+
+#third {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#third img {
+   height: 400px;
+}
+
+.footer{
+   width: 100%;
+   background-color:#1C2331;
+}
+
+@media (max-width: 768px) {
+   #name {
+      margin-top: 10%;
+   }
+
+   #element {
+      margin-top: 50%;
+   }
+
+   .education {
+      display: block;
+   }
+
+   .leftA {
+      margin-top: 0;
+      width: 100%;
+      border-right: none;
+   }
+   #SecondEducation {
+      display: none;
+   }
+   #ThirdEducation {
+      width: 100%;
+      padding: 0 20px 20px 0;
+   }
+   #FourthEducation {
+      display: none;
+   }
+   .rightA {
+      width: 100%;
+   }
+
+   .bubble {
+      display: none;
+   }
+
+   .skilGrid {
+      padding: 20px;
+      display: block;
+   }
+
+   .first img {
+      margin-top: 10px;
+      width: 100%;
+   }
+   #third img{
+      height: 100%;
+   }
+
+
+}
