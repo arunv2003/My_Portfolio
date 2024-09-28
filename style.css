@@ -54,8 +54,28 @@ body {
    top: 90%;
    left: 10%;
 }
-
-
+#log{
+   position: absolute;
+   /* background-color: #425c74;  */
+   left: 20%;
+   top: 105%;
+} 
+#log a{
+   text-decoration: none;
+}
+#insta{
+   border: 2px solid black;
+   padding: 4px;
+   transition:0.4s all ease-in-out;
+   font-size: 30px;
+   width: 100%;
+   color:whitesmoke;
+   border: 2px solid seagreen;
+   border-radius: 20px;
+}
+#insta:hover{
+   background-color: seagreen;
+}
 .Logo .left {
    top: 15%;
    position: absolute;
@@ -343,17 +363,32 @@ body {
 
 @media (max-width: 768px) {
    #name {
-      margin-top: 10%;
+      margin-top: 5%;
    }
-
+   #log{
+      top: 130%;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      position: absolute;
+      left: 20%;
+   }
+   #insta{
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 5px 20px;
+      justify-content: center;
+      width: 35%;
+   }
    #element {
-      margin-top: 50%;
+      margin-top: 30%;
    }
 
    .education {
       display: block;
    }
-
+   
    .leftA {
       margin-top: 0;
       width: 100%;
